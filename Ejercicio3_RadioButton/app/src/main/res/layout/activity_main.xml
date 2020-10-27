@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Radio Butones"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.16" />
+
+    <RadioGroup
+        android:id="@+id/Radio"
+        android:layout_width="159dp"
+        android:layout_height="319dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.128">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¿Qué pelicula podría suceder en un futuro cercano?" />
+
+        <RadioButton
+            android:id="@+id/btnMatrix"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:text="Matrix" />
+
+        <RadioButton
+            android:id="@+id/btnInTime"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:text="In Time" />
+
+        <RadioButton
+            android:id="@+id/btnBlade"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:text="Blade Runner" />
+
+        <RadioButton
+            android:id="@+id/btnTerminator"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:text="Terminator" />
+
+        <Button
+            android:id="@+id/btnAceptar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aceptar" />
+
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
